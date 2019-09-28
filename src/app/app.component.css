@@ -1,0 +1,16 @@
+mat-grid-tile {
+}
+
+button {
+    margin-bottom: 10px;
+    height: 30%;
+}
+
+.second {
+    background: lightblue;
+}
+
+.text{
+    font-size: 1.17em;
+    font-weight: bold;
+}
