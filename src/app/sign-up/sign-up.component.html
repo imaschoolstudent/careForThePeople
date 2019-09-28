@@ -1,1 +1,51 @@
-<p>sign-up works</p>
+
+<mat-grid-list cols="3">
+    <mat-grid-tile style="height:200vh;" colspan="2">
+        <div style="width:90%; margin-top: 2.5vw;" [class.mat-elevation-z2]="true">
+            <form style="width:100%;" class="example-form">
+
+                <div style="margin-left:2.5%; padding-left:10px; margin-top:2vw; width: 93%;
+                height: 65px;
+                color: #000000;
+                font-family: Roboto;
+                font-size: 40px;
+                font-weight: 400;
+                line-height: 64.69px;"  [class.mat-elevation-z2]="true">Thank you for joining us, let us get started</div>
+
+                <div style="margin-left:10%; margin-top:20px;width: 144px;
+                height: 32px;
+                color: #000000;
+                font-family: Roboto;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 32.34px;" >All about you</div>
+
+                <mat-form-field class="example-full-width">
+                    <input matInput placeholder="What is your full name?">
+                </mat-form-field>
+
+                <mat-form-field class="example-full-width">
+                    <input matInput placeholder="What is your address?">
+                </mat-form-field>
+
+                <mat-form-field style="margin-bottom:50px" class="example-full-width">
+                    <textarea matInput style="height:60px;" placeholder="What are some qualities you would like others to know?"></textarea>
+                </mat-form-field>
+                    
+                    
+                <mat-form-field class="example-full-width">
+                    <input matInput placeholder="Create your username">
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <input matInput type='password' placeholder="Create your password">
+                </mat-form-field>
+                <mat-form-field class="example-full-width">
+                    <input matInput type='password' placeholder="What is your email?">
+                </mat-form-field>
+            </form>
+        </div>
+
+
+    </mat-grid-tile>
+    <mat-grid-tile colspan="1" class="second">2</mat-grid-tile>
+</mat-grid-list>
