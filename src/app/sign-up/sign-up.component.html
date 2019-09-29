@@ -1,10 +1,10 @@
 
 <mat-grid-list cols="3">
-    <mat-grid-tile style="height:200vh;" colspan="2">
-        <div style="width:90%; margin-top: 2.5vw;" [class.mat-elevation-z2]="true">
+    <mat-grid-tile style="overflow:unset" colspan="2">
+        <div style="margin-bottom:5vh;width:90%; margin-top: 2.5vw;" [class.mat-elevation-z6]="true">
             <form style="width:100%;" class="example-form">
 
-                <div style="margin-left:2.5%; padding-left:10px; margin-top:2vw; width: 93%;
+                <div style="margin-left:2.5%; padding-left:10px; margin-top:3vw; width: 93%;
                 height: 65px;
                 color: #000000;
                 font-family: Roboto;
@@ -12,7 +12,7 @@
                 font-weight: 400;
                 line-height: 64.69px;"  [class.mat-elevation-z2]="true">Thank you for joining us, let us get started</div>
 
-                <div style="margin-left:10%; margin-top:20px;width: 144px;
+                <div style="margin-left:10%; margin-top:4vw;margin-bottom:3vh;width: 144px;
                 height: 32px;
                 color: #000000;
                 font-family: Roboto;
@@ -39,13 +39,38 @@
                 <mat-form-field class="example-full-width">
                     <input matInput type='password' placeholder="Create your password">
                 </mat-form-field>
-                <mat-form-field class="example-full-width">
-                    <input matInput type='password' placeholder="What is your email?">
+                <mat-form-field style="margin-bottom:5vh" class="example-full-width">
+                    <input matInput placeholder="What is your email?">
                 </mat-form-field>
             </form>
         </div>
 
 
     </mat-grid-tile>
-    <mat-grid-tile colspan="1" class="second">2</mat-grid-tile>
+    <mat-grid-tile style="height:auto; overflow:unset; justify-content: center;align-items: center" colspan="1" class="second">
+        <div style="width:90%; margin-top: 2.5vw; height:500px;justify-content: center;align-items: center;" [class.mat-elevation-z4]="true">
+            <input #file placeholder="Choose Image" type="file" accept='image/*' (change)="preview(file.files)" />
+            <img style="    height: 200px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top:40px;
+            width: 200px;
+            object-fit: cover;
+            border-radius: 50%; border-color: black; border-width: 2px;"[src]="imgURL" *ngIf="imgURL">
+            <img style="    height: 200px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top:40px;
+            width: 200px;
+            object-fit: cover;
+            border-radius: 50%; border-color: black; border:solid; border-width: 2px;" *ngIf="!imgURL" >
+        </div>
+
+
+    </mat-grid-tile>
 </mat-grid-list>
+
+<button class="text" routerLink="/search" mat-raised-button style="width: 10vw;height: 10vh; position:fixed;right:5vw;bottom:5vh;background-color: rgb(66, 238, 118)">Confirm</button>
+<button class="text" routerLink="/" mat-raised-button style="width: 10vw;height: 10vh; position:fixed;right:17.5vw;bottom:5vh;background-color: rgb(250, 8, 8)">Cancel</button>

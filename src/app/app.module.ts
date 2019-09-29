@@ -20,6 +20,8 @@ import { MatToolbarModule } from '@angular/material'
 import { MatCardModule } from '@angular/material/card'
 import { MatGridListModule } from '@angular/material/grid-list'
 
+import {MatDialogModule, MatDialogRef} from '@angular/material/dialog';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,7 +47,8 @@ import { MatGridListModule } from '@angular/material/grid-list'
     MatRippleModule,
     MatToolbarModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    MatDialogModule
   ],
   exports: [
     MatButtonModule,

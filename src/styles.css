@@ -6,3 +6,7 @@ body { margin: 0; font-family: 'Roboto', sans-serif; }
 .mat-grid-tile .mat-figure {
     align-items: flex-start !important;
  }
+
+.mat-dialog-container {
+    padding:0;
+}
